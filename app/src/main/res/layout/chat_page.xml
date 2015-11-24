@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/chatTitle"
+        android:background="@drawable/arrow"
+        android:layout_width="30dip"
+        android:layout_height="30dip" />
+
+    <TextView
+        android:text="@string/app_name"
+        android:id="@+id/chatTitle"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/chatTitle"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/sendBar"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/chatPageListView"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/sendBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dip">
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:imeOptions="actionSend"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:background="@drawable/edittext_border"
+            android:inputType="text"
+            android:layout_marginBottom="10dip"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/send_btn" />
+    </RelativeLayout>
+</RelativeLayout>

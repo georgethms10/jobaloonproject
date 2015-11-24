@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/createProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:text="@string/create_profile"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveProfLayout"
+        android:layout_below="@+id/createProfile"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/full_name"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/blue_line_edit"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/grey_line_edit"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/password"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/blue_line_edit"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/Dirección_completa_dónde_vives"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/addressAuto"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/grey_line_edit"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="Job experience 1"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/exp_one_Edit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:layout_height="35dip"-->
+            <!--android:background="@drawable/blue_line_edit"-->
+            <!--android:inputType="text"-->
+            <!--android:textColor="@android:color/black"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="Job experience 2"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/exp_two_Edit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:layout_height="35dip"-->
+            <!--android:background="@drawable/blue_line_edit"-->
+            <!--android:inputType="text"-->
+            <!--android:textColor="@android:color/black"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="Job experience 3"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/exp_three_Edit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:layout_height="35dip"-->
+            <!--android:background="@drawable/blue_line_edit"-->
+            <!--android:inputType="text"-->
+            <!--android:layout_marginBottom="50dip"-->
+            <!--android:textColor="@android:color/black"/>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<Button-->
+    <!--android:id="@+id/nextButton"-->
+    <!--android:layout_width="250dip"-->
+    <!--android:layout_marginBottom="10dip"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_height="50dip"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/blue_round_button"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/next"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="17sp" />-->
+
+    <LinearLayout
+        android:id="@+id/saveProfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nextButton"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/save_profile_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/Guardar_perfil"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

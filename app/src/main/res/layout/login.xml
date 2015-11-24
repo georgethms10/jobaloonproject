@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dip"
+    android:background="@drawable/white_box_blue_borders">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:text="@string/access_your_account"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="10dip"
+        android:id="@+id/emailEdit"
+        android:padding="10dip"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@android:color/black"
+        android:layout_height="45dip"
+        android:background="@drawable/black_line_edit"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"></EditText>
+
+    <EditText
+        android:layout_marginTop="10dip"
+        android:id="@+id/passwordEdit"
+        android:padding="10dip"
+        android:imeOptions="actionGo"
+        android:textCursorDrawable="@null"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/black"
+        android:layout_height="45dip"
+        android:background="@drawable/black_line_edit"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"></EditText>
+
+
+</LinearLayout>

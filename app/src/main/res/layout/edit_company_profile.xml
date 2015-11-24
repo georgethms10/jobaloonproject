@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/createProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:text="@string/edit_profile"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_marginBottom="25dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextButton"
+        android:layout_below="@+id/createProfile"
+        android:padding="20dip"
+        android:layout_marginTop="30dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/company_name"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:id="@+id/companyNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/blue_line_edit"
+                android:inputType="text"
+                android:textColor="@android:color/black">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/company_email"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:id="@+id/companyEmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/grey_line_edit"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/password"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/blue_line_edit"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/editAddressText_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/company_address"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/companyAddressAuto"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/grey_line_edit"
+                android:inputType="text"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center_horizontal"
+                android:text="@string/chat_notifications"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip">
+
+                <TextView
+                    android:id="@+id/offText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/off"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/notificationToggle"
+                    android:layout_width="35dip"
+                    android:layout_height="20dip"
+                    android:layout_toRightOf="@+id/offText"
+                    android:background="@drawable/toggle_selector"
+                    android:textColor="@android:color/transparent"
+                    android:textOff="Off"
+                    android:textOn="On" />
+
+                <TextView
+                    android:id="@+id/onText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/notificationToggle"
+                    android:gravity="center_vertical"
+                    android:text="@string/on"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="15dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/saveButton"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:background="@drawable/save_profile_button"
+                android:layout_marginBottom="8dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_profile"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginBottom="8dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="8dip">
+
+            <ImageView
+                android:id="@+id/logoutButton"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:background="@drawable/logout_button"
+                android:layout_marginBottom="8dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cerrar_sesión"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginBottom="8dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

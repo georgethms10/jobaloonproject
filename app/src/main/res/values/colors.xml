@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--<item name="blue" type="color">#4292f0</item>-->
+<item name="blue" type="color">#5CA8FF</item>
+<item name="blue_search" type="color">#33b2e2</item>
+<item name="grey" type="color">#b6b6b6</item>
+<item name="pale_blue" type="color">#b5cbd3</item>
+<item name="dark_blue" type="color">#81abe2</item>
+<item name="dialog_bg" type="color">#282828</item>
+<item name="dialog_text_color" type="color">#00BFFF</item>
+<item name="red" type="color">#FF001A</item>
+
+</resources>

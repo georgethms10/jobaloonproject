@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="5dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:text="@string/Para_qué_oferta_quieres_ver_a_los_candidatos"
+        android:id="@+id/topTextView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:padding="10dp"
+        android:layout_above="@+id/backToScreenImage"
+        android:layout_below="@+id/topTextView"
+        android:layout_marginTop="10dip"
+        android:dividerHeight="1dip"
+        android:divider="@color/blue"
+        android:id="@+id/SeeMyOfferListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/backToScreenImage"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@drawable/back_to_previous_screen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/backToPreviousScreenText"
+        android:layout_marginBottom="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backToPreviousScreenText"
+        android:text="@string/back_to_previous_screen"
+        android:textSize="18sp"
+        android:layout_marginBottom="3dip"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

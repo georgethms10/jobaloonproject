@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dip"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_marginTop="5dip"
+        android:text="@string/app_name"
+        android:id="@+id/sendMessageTextView"
+        android:padding="17dp"
+        android:gravity="right"
+        android:textSize="17sp"
+        android:layout_gravity="right"
+        android:background="@drawable/bubblesender"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dip"
+        android:text="@string/app_name"
+        android:id="@+id/receiveMessageTextView"
+        android:padding="17dp"
+        android:layout_gravity="left"
+        android:textSize="17sp"
+        android:gravity="left"
+        android:background="@drawable/bubblereciever"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

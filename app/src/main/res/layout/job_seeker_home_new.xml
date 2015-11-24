@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/SeekerSearchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="@string/What_kind_of_job_are_you_looking_for"
+        android:layout_marginTop="10dip" />
+
+    <LinearLayout
+        android:id="@+id/chooseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/SeekerSearchText"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2">
+
+        <AutoCompleteTextView
+            android:imeOptions="actionDone"
+            android:id="@+id/jobSeekerLabelAuto"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/spinner_border"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/searchCriteriaSpinner"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+
+            android:background="@android:color/white"
+            android:layout_weight="1.75"
+            android:visibility="gone"></Spinner>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:background="@drawable/dropdown"
+            android:layout_weight="0.25"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/searchCriteriaSpinner" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/enterDescText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/seekerDescEdit"
+            android:layout_width="match_parent"
+            android:layout_height="90dip"
+            android:gravity="top"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/spinner_border"
+            android:layout_below="@+id/enterDescText"
+            android:layout_marginTop="15dip"
+            android:maxLength="140"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="10dip" />
+
+        <ImageView
+            android:id="@+id/seekerJobsearchButton"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:background="@drawable/search_job_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/seekerDescEdit"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="@string/Buscar_trabajos"
+            android:layout_below="@+id/seekerJobsearchButton"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="10dip" />
+
+    </RelativeLayout>
+</LinearLayout>

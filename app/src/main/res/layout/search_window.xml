@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/closeLayout"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="5dip"
+            android:layout_width="match_parent"
+            android:layout_height="45dip">
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/closeButton"
+                android:background="@drawable/up_arrow_blue"
+                android:layout_width="35dip"
+                android:layout_height="35dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chooseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/Indica_el_puesto_de_trabajo_a_cubrir"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/chooseLayout"
+                android:layout_width="300dip"
+                android:layout_below="@+id/chooseTitle"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:weightSum="2">
+
+                <AutoCompleteTextView
+                    android:imeOptions="actionDone"
+                    android:id="@+id/companyLabelAuto"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/spinner_border"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scheduleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule"
+                android:layout_below="@+id/chooseLayout"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/starts"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dip"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:id="@+id/startTimeEdit"
+                android:layout_width="0dip"
+                android:layout_weight="1.3"
+                android:text="10:00 hs"
+                android:layout_height="35dip"
+                android:background="@drawable/grey_line_edit"
+                android:inputType="none"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/ends"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dip"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:text="18:00 hs"
+                android:textCursorDrawable="@null"
+                android:id="@+id/endTimeEdit"
+                android:layout_width="0dip"
+                android:layout_weight="1.3"
+                android:layout_height="35dip"
+                android:background="@drawable/grey_line_edit"
+                android:inputType="none"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekdaysLayout"
+            android:padding="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/Días_de_trabajo"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_marginBottom="10dip"
+                android:padding="5dip"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/mondayCheck"
+                    android:layout_margin="3dip"
+                    android:checked="true"
+                    android:button="@drawable/monday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/tuesdayCheck"
+                    android:layout_margin="3dip"
+                    android:checked="true"
+                    android:button="@drawable/tuesday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/wednesdayCheck"
+                    android:checked="true"
+                    android:layout_margin="3dip"
+                    android:button="@drawable/wednesday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/thursdayCheck"
+                    android:checked="true"
+                    android:layout_margin="3dip"
+                    android:button="@drawable/thursday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/fridayCheck"
+                    android:checked="true"
+                    android:layout_margin="3dip"
+                    android:button="@drawable/friday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/saturdayCheck"
+                    android:layout_margin="3dip"
+                    android:button="@drawable/saturday_selecor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/sundayCheck"
+                    android:layout_margin="3dip"
+                    android:button="@drawable/sunday_selector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/from_this_address"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:layout_marginTop="5dip"
+                android:drawablePadding="10dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/grey_line_edit"
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="35dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:text="@string/show_candidates_in"
+            android:paddingLeft="10dip"
+            android:textColor="@android:color/black"
+            android:paddingRight="10dip"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="35dip"
+            android:layout_marginTop="15dip" />
+
+        <TextView
+            android:layout_margin="3dip"
+            android:layout_gravity="center"
+            android:id="@+id/candidateRadiusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/default_radius"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/candidateRadiusSeek"
+            android:layout_margin="10dip"
+            android:max="50"
+            android:thumb="@drawable/seek_thumb"
+            android:maxHeight="5dip"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="@string/additional_info"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip" />
+
+        <EditText
+            android:editable="false"
+            android:focusable="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="top"
+            android:id="@+id/additionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="90dip"
+            android:layout_marginTop="10dip"
+            android:maxLength="140"
+            android:inputType="textMultiLine"
+            android:background="@drawable/spinner_border"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="@string/name_this_offer"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip" />
+
+        <EditText
+            android:editable="false"
+            android:focusable="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:id="@+id/NameOfOffer"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/grey_line_edit"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+
+        <ImageView
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:background="@drawable/post_an_offer"
+            android:id="@+id/searchButton"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="10dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:text="@string/post_the_offer"
+            android:layout_marginBottom="8dip" />
+    </LinearLayout>
+</ScrollView>

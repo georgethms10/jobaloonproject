@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jobaloon</string>
+
+    <!-- domains -->
+    <string name="url_image">http://52.20.113.206/jobaloon/uploads/images/</string>
+    <string name="url_domain">http://52.20.113.206/jobaloon/json/Api.php?</string>
+    <string name="url_video">http://52.20.113.206/jobaloon/uploads/videos/</string>
+    <string name="url_samples">http://52.20.113.206/jobaloon/uploads/videos/</string>
+    <!--<string name="url_samples">http://52.0.125.31/JobBox/upload_app/</string>-->
+
+    <string name="url_new_domain">http://52.20.113.206/jobbox/json/</string>
+    <string name="url_new_video">http://52.20.113.206/jobbox/uploads/videos/</string>
+
+
+    <string name="SeeMyOffer">What offers do you want to see the candidates from ?</string>
+
+    <!--search window default values-->
+    <string name="default_salary">10 €</string>
+    <string name="default_radius">1 Km</string>
+
+    <!-- Spanish Words -->
+    <string name="access_my_account">Acceder a mi cuenta</string>
+    <string name="create_account">Crear una nueva cuenta</string>
+    <string name="terms_conditions">Términos y condiciones</string>
+    <string name="company_name">Nombre de la empresa</string>
+    <string name="company_email">Correo electrónico</string>
+    <string name="company_address">Dirección completa (dónde está la empresa)</string>
+    <string name="password">Contraseña</string>
+    <string name="chat_notifications">Notificaciones del chat</string>
+    <string name="create_profile">Crear perfil</string>
+    <string name="next">Siguiente  ></string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="email">Correo electrónico</string>
+    <string name="address">Dirección</string>
+    <string name="access_your_account">Acceder a tu cuenta</string>
+    <string name="looking_job">Busco un trabajo</string>
+    <string name="looking_worker">Busco un trabajador</string>
+    <string name="success">Bienvenido</string>
+    <string name="success_2">Cambios guardados</string>
+
+    <string name="failed">Error</string>
+    <string name="this_field_is_requierd">Este campo es obligatorio</string>
+    <string name="enter_valid_email">Por favor introduce un correo válido</string>
+    <string name="failed_to_get_data_from_server">Error al solicitar datos del servidor</string>
+    <string name="enter_all_fields">Completa todos los campos</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="logout">Salir de la aplicación</string>
+    <string name="confirm">Confirmar</string>
+    <string name="do_you_really_want_to_logout">¿De verdad quieres salir?</string>
+    <string name="yes">sí</string>
+    <string name="no">No</string>
+    <string name="search">Búsqueda</string>
+    <string name="search_for_workers">Filtrar y buscar trabajadores</string>
+    <string name="job_profile">Perfil de trabajo:</string>
+    <string name="schedule">Horario:</string>
+    <string name="weekdays">Días de trabajo</string>
+    <string name="sunday">Domingo</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="hourly_salary">Salario / hora</string>
+    <string name="show_candidates_in">Muéstrame candidatos en un radio de:</string>
+    <string name="from_this_address">Desde esta dirección (dirección completa):</string>
+    <string name="urgent_mode">Modo urgencia: necesito un trabajador para</string>
+    <string name="tomorrow">Mañana</string>
+    <string name="today">Hoy</string>
+    <string name="asap">Pronto</string>
+    <string name="from">Desde</string>
+    <string name="to">Hasta </string>
+    <string name="ok">Okay</string>
+    <string name="all_fields_are_mandatory">Todos los campos son obligatorios</string>
+    <string name="selected_candidates">Candidatos seleccionados</string>
+    <string name="go_back_to_search">Volver a la búsqueda</string>
+    <string name="set_time">Establecer hora</string>
+    <string name="no_result_to_show">No hay resultados para mostrar</string>
+    <string name="press_again_to_exit">Presione nuevamente para salir!</string>
+    <string name="your_description_write_lines_about">Tu descripción. Indica en 140 caracteres tu experiencia, idiomas, habilidades, etc.</string>
+    <!--<string name="add_a_6_10_sec_video">Añade un vídeo de 6-10 segundos que explique por qué deben escogerte.</string>-->
+    <!--<string name="see_example">Ver ejemplos</string>-->
+    <string name="upload_a_video">Subir vídeo</string>
+    <string name="profile_visits_notifications">Notificaciones de visitas al perfil</string>
+    <string name="interested_companies">Compañías interesadas</string>
+    <string name="your_profile_has_been_visited_by">Tu perfil ha sido visto por</string>
+    <string name="back">Atrás</string>
+    <string name="can_not_play_the_video">No se puede reproducir el vídeo!</string>
+    <string name="video_started_uploading">Se está subiendo el video</string>
+    <string name="video_upload_is_successful">El video se ha subido con éxito</string>
+    <string name="video_upload_is_failed">Subir vídeo se falla</string>
+    <string name="send_this_message">Enviar este mensaje</string>
+    <string name="send_another_message">Enviar otro mensaje</string>
+    <string name="auto_message_confirm">¿Desea enviarle los datos de la oferta al candidato?</string>
+    <string name="enter_label">Introduzca etiqueta</string>
+    <string name="no_connection">No hay conexión</string>
+    <string name="add_5sec_video">Graba un video 5 seg. indicando por qué deben seleccionarte. ¡No te olvides de sonreír!</string>
+    <string name="see_example">¿No te sientes inspirado? Aquí puedes ver algunos ejemplos.</string>
+    <string name="code_1">Código 1</string>
+    <string name="code_2">Código 2</string>
+    <string name="code_3">Código 3</string>
+    <string name="profile_1">Perfil 1</string>
+    <string name="profile_2">Perfil 2</string>
+    <string name="what_offers_is_this_video_for">¿Para qué ofertas de trabajo es este vídeo?</string>
+    <string name="what_job_profile_do_you_have">¿Qué perfil de trabajo tienes?</string>
+    <string name="chose_between_the_following_options">Escoge entre las siguientes opciones:</string>
+    <string name="filter_by_offer_code">Filtrar por oferta (solo verás a tus candidatos preseleccionados para oferta)</string>
+    <string name="filter_by_job_profile">Filtrar por perfil de trabajo (verás a potenciales trabajadores para ese perfil)</string>
+    <string name="code">Código de oferta</string>
+    <string name="see_my_offers">Ver mis ofertas</string>
+    <string name="chat_with_candidates">Candidatos seleccionados</string>
+    <string name="back_to_previous_screen">Volver a la pantalla anterior</string>
+    <string name="save_profile">Guardar perfil</string>
+    <string name="post_the_offer">Crear nueva oferta</string>
+    <string name="starts">Inicio:</string>
+    <string name="ends">Final:</string>
+    <string name="name_this_offer">Pon un nombre esta oferta:</string>
+    <string name="additional_info">Informacion adicional (opcional)</string>
+    <string name="What_kind_of_job_are_you_looking_for">¿Qué tipo de trabajo estás buscando?</string>
+    <string name="Explain_in_140_characters_your_last_job_experience_and_education_1">Describe en</string>
+    <string name="Explain_in_140_characters_your_last_job_experience_and_education_2">caracteres tu última experiencia laboral y formación</string>
+
+    <string name="Add_a_5_video_showing_why_you_should_be_chosen_Dont_forget_to_smile">Añade un vídeo de 10 segundos donde indiques por qué deben escogerte. ¡No olvides sonreír!</string>
+    <string name="Publicar_nueva_oferta">Publicar nueva oferta</string>
+    <string name="Para_encontrar_un_trabajador_se_necesita_publicar_una_oferta">Para encontrar un trabajador se necesita publicar una oferta</string>
+    <string name="Por_ahora_no_hay_más_candidatos_para_esta_oferta_En_breve_recibirás_nuevos_vídeoCVs">Por ahora no hay más candidatos para esta oferta. En breve recibirás nuevos vídeo-CVs.</string>
+    <string name="Tu_oferta_ha_sido_creada_con_éxito">Tu oferta ha sido creada con éxito</string>
+    <string name="Ver_mis_ofertas">Ver mis ofertas</string>
+    <string name="Este_correo_ya_ha_sido_dado_de_alta">Este correo ya ha sido dado de alta</string>
+    <string name="Dirección_completa_dónde_vives">Dirección completa (dónde vives)</string>
+    <string name="No_hay_más_ofertas_para_este_tipo_de_trabajo">No hay más ofertas para este tipo de trabajo</string>
+    <string name="Todos_los_campos_son_obligatorios">Todos los campos son obligatorios</string>
+    <string name="Usuario_o_contraseña_incorrecto">Usuario o contraseña incorrecto</string>
+    <string name="La_primera_impresión_es_lo_que_cuenta">La primera impresión es lo que cuenta</string>
+    <string name="Guardar_perfil">Guardar perfil</string>
+    <string name="Para_qué_oferta_quieres_ver_a_los_candidatos">¿Para qué oferta quieres ver a los candidatos?</string>
+    <string name="Indica_el_puesto_de_trabajo_a_cubrir">Indica el puesto de trabajo a cubrir:</string>
+    <string name="Días_de_trabajo">Días de trabajo:</string>
+    <string name="Los_candidatos_están_grabando_su_vídeoCV_En_breve_podrás_verlos_y_contactarlos">Los candidatos están grabando su vídeo-CV. En breve podrás verlos y contactarlos.</string>
+    <string name="Grabar">Grabar</string>
+    <string name="Ideas">Ideas</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Buscar_trabajos">Buscar trabajos</string>
+    <string name="No_hay_más_ofertas_para_el_tipo_de_trabajo_seleccionado_Busca_otros_trabajos_o_espera_a_que_encontremos_nuevas_ofertas">No hay más ofertas para el tipo de trabajo seleccionado. Busca otros trabajos o espera a que encontremos nuevas ofertas.</string>
+    <string name="Cambiar_vídeo">Cambiar vídeo</string>
+    <string name="Ofertas_inscritas">Ofertas inscritas</string>
+    <string name="Cerrar_sesión">Cerrar sesión</string>
+    <string name="Salir">Salir</string>
+    <string name="Por_favor_graba_un_vídeo_antes_de_seguir"> Por favor graba un vídeo antes de seguir</string>
+    <string name="Aún_no_tienes_ninguna_oferta">Aún no tienes ninguna oferta</string>
+    <string name="último_elemento">último elemento</string>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:padding="10dip"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:hint="publicar neuva oferta"
+            android:editable="false"
+            android:background="@drawable/edittext_border"
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:inputType="none"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayout"
+        android:layout_above="@+id/secondSetButtons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/after_posting_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_margin="5dip"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/image_and_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="280dip"
+                android:layout_below="@+id/after_posting_header"
+                android:layout_margin="8dip">
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/searchfeedvideoView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/searchImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@drawable/draw_post_a_new_offer" />
+
+                <ImageView
+                    android:id="@+id/after_posting_searchImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/new_video"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/like_info_dislike_button_set"
+                android:layout_marginTop="5dip"
+                android:visibility="gone"
+                android:layout_below="@+id/image_and_video_layout">
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/profileLikeButton"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/like_selector"
+                    android:layout_toLeftOf="@+id/infoButton"
+                    android:layout_marginRight="10dip" />
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/infoButton"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/info_selector"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+
+                    android:clickable="true"
+                    android:id="@+id/profileDisLikeButton"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/dislike_selector"
+                    android:layout_toRightOf="@+id/infoButton"
+                    android:layout_marginLeft="10dip" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_and_video_layout"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="15dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/searchDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    android:gravity="left"
+                    android:text="@string/Los_candidatos_están_grabando_su_vídeoCV_En_breve_podrás_verlos_y_contactarlos" />
+
+
+                <ImageView
+                    android:layout_below="@+id/searchDesc"
+                    android:id="@+id/after_posting_refreshButton"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/refresh_button"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/secondSetButtons"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/seeMyOffers"
+            android:layout_margin="1dip"
+            android:layout_width="0dip"
+            android:background="@color/blue"
+            android:text="@string/see_my_offers"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:layout_margin="1dip">
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/selectedCandidates"
+                android:background="@color/blue"
+                android:text="@string/chat_with_candidates"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/ChatcountframeLayout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/red_circle"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp" />
+
+                <TextView
+                    android:id="@+id/ChatcountText"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="1dip"
+                    android:paddingRight="0dip"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/companyEditProfileButton"
+            android:background="@color/blue"
+            android:layout_margin="1dip"
+            android:text="@string/edit_profile"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>
